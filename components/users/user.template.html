@@ -1,14 +1,19 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2">
-            
+        <div class="col">
+            <h1>Daftar Users</h1>
         </div>
-        <div class="col-md-10">
-            <ul class="phones">
-                <li>
-                    <div class="name"></div>
-                    <div class="age"></div>
-                </li>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" ng-model="$ctrl.nama" placeholder="Masukan nama" />
+            <button ng-click="$ctrl.onAddUser()"></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li ng-repeat="user in $ctrl.users">{{ user }}</li>
             </ul>
         </div>
     </div>
