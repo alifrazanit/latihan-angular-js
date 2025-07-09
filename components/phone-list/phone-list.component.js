@@ -2,7 +2,7 @@
 angular.
     module('phoneList').
     component('phoneList', {  // This name is what AngularJS uses to match to the `<phone-list>` element.
-        templateUrl: 'phone-list.template.html',
+        templateUrl: 'components/phone-list/phone-list.template.html',
         controller: function PhoneListController() {
             this.phones = [
                 {
