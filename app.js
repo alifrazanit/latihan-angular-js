@@ -1,3 +1,4 @@
 angular.module('phonecatApp', [
-    'phoneList'
+    'phoneList',
+    'userList'
 ]); // [] untuk init module
